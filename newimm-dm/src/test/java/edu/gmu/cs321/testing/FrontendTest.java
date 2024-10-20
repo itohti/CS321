@@ -11,5 +11,7 @@ import edu.gmu.cs321.frontend.*;
  * NameComponent
  */
 public class FrontendTest {
+
+    // all test will be testing for the 'happy path' we will implement error handling later in development.
     
 }
