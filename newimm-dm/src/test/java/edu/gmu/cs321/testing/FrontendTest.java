@@ -29,6 +29,39 @@ public class FrontendTest {
     assertEquals("VA", state, "Expected VA but got " + state);
 
 
+    @Test // start with entry test
+    public void entryPointStatusTest() {
+        // Test the status field in EntryPoint class.
+        EntryPoint entryPoint = new EntryPoint();
+        entryPoint.setStatus(true);  // Setting status to true so for like a good input.
+
+        boolean status = entryPoint.getStatus();
+
+        assertTrue(status, "Expected true status but got false");
+    }
+
+    @Test
+    public void nameComponentSetterGetterTest() {
+        // Test the setter and getter methods for name fields.
+        NameComponent nameComponent = new NameComponent();
+        nameComponent.setFirstName("Jesh");
+        nameComponent.setLastName("Anthony");  // Setting name to Jesh Anthony
+
+        String firstName = nameComponent.getFirstName();
+        String lastName = nameComponent.getLastName();
+
+        assertEquals("Jesh", firstName, "Expected first name Jesh but got " + firstName);
+        assertEquals("Anthony", lastName, "Expected last name Anthony but got " + lastName);
+        entryPoint.setStatus(false);
+        result = entryPoint.submitApplication();
+        assertFalse(result, "Expected submission to fail, but it was successful.");
+    }
+
+    
+
+
+
+
 
 
     // all test will be testing for the 'happy path' we will implement error handling later in development.
