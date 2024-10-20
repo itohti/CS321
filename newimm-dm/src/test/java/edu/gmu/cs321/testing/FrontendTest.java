@@ -56,6 +56,46 @@ public class FrontendTest {
         result = entryPoint.submitApplication();
         assertFalse(result, "Expected submission to fail, but it was successful.");
     }
+    // next for date of birth
+
+    @Test
+    public void dobComponentSetterGetterTest() {
+       
+        DOBComponent dobComponent = new DOBComponent();
+        dobComponent.setYear(2024);
+        dobComponent.setMonth(10);
+        dobComponent.setDay(20); 
+
+        int year = dobComponent.getYear();
+        int month = dobComponent.getMonth();
+        int day = dobComponent.getDay();
+
+        assertEquals(2024, year, "Expected year 2024 but got " + year);
+        assertEquals(10, month, "Expected month 10 but got " + month);
+        assertEquals(20, day, "Expected day 20 but got " + day);
+    }
+
+
+    // lastly for address:
+     @Test
+    public void addressComponentSetterGetterTest() {
+    
+        AddressComponent addressComponent = new AddressComponent();
+        addressComponent.setAddress("4400 University Dr, Fairfax, VA 22030");  // our school address
+        addressComponent.setZipcode(22030);
+        addressComponent.setCountry("USA");
+        addressComponent.setState("VA");
+
+        String address = addressComponent.getAddress();
+        int zipcode = addressComponent.getZipcode();
+        String country = addressComponent.getCountry();
+        String state = addressComponent.getState();
+
+        assertEquals("4400 University Dr, Fairfax, VA 22030", address, "Expected George Mason University address but got " + address);
+        assertEquals(22030, zipcode, "Expected 22030 but got " + zipcode);
+        assertEquals("USA", country, "Expected USA but got " + country);
+        assertEquals("VA", state, "Expected VA but got " + state);
+    }
 
     
 
