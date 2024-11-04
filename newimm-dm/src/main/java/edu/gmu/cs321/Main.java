@@ -22,7 +22,7 @@ public class Main extends Application{
 
         mainLayout.getChildren().addAll(name, dob, address);
 
-        Scene scene = new Scene(mainLayout, 400, 300);
+        Scene scene = new Scene(mainLayout, 600, 600);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Application to Request Green Card Replacement");
         primaryStage.show();
