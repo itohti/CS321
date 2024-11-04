@@ -1,6 +1,13 @@
 package edu.gmu.cs321.frontend;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 
-public class NameComponent {
+public class NameComponent extends VBox{
+    public NameComponent() {
+        // Add UI elements to the NameComponent
+        Label label = new Label("Name Section");
+        getChildren().add(label);
+    }
 
     public void setFirstName(String string) {
         // TODO Auto-generated method stub
