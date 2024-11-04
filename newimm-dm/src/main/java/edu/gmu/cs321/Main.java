@@ -5,6 +5,8 @@ import edu.gmu.cs321.frontend.DOBComponent;
 import edu.gmu.cs321.frontend.NameComponent;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
