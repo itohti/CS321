@@ -37,6 +37,14 @@
             <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.cs321</groupId>
+            <artifactId>Workflow</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/workflow.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
     <build>

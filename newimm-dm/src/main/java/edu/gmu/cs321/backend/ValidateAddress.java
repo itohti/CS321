@@ -11,8 +11,7 @@ public class ValidateAddress {
      * @param string
      */
     public void setAddress(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setAddress'");
+       this.address = string;
     }
 
     /**
@@ -20,8 +19,7 @@ public class ValidateAddress {
      * @return String
      */
     public String getAddress() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAddress'");
+        return this.address;
     }
 
     /**
@@ -30,8 +28,8 @@ public class ValidateAddress {
      * @return boolean
      */
     public boolean validateAddress() throws IllegalStateException{
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validateAddress'");
+
+        return false;
     }
     
 }

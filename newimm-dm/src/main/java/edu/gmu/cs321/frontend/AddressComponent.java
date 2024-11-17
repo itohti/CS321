@@ -42,7 +42,7 @@ public class AddressComponent extends VBox {
         try {
             return Integer.parseInt(zipcodeField.getText());
         } catch (NumberFormatException e) {
-            return 0; // or handle as appropriate
+            return 0;
         }
     }
 
